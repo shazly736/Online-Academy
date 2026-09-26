@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Online Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Online Academy Logo">
+            <h1>Online Academy</h1>
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="login.html" class="login-button">Login</a>
+</header>
+
+<main>
+    <section class="auth-page">
+        <div class="auth-box">
+            <h2>Create Account</h2>
+
+            <form id="registerForm">
+                <input type="text" id="regName" placeholder="Full Name" required>
+                <input type="email" id="regEmail" placeholder="Email" required>
+                <input type="password" id="regPassword" placeholder="Password" required minlength="6">
+                <input type="password" id="regConfirmPassword" placeholder="Confirm Password" required minlength="6">
+                <div id="registerMessage" class="form-alert" style="display: none;"></div>
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+
+            <p style="margin-top: 20px;">
+                Already have an account?
+                <a href="login.html" style="color: #16d8cf; font-weight: bold; text-decoration: none;">Login</a>
+            </p>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>Online Academy</h3>
+            <p>Learn programming and technology step by step with practical courses and real-world skills.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1DramDssTn/" target="_blank" rel="noopener noreferrer">
+                    <span>📘 Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/__online_academy?stkn=aDQ0NjR1aW5sOWQ=" target="_blank" rel="noopener noreferrer">
+                    <span>📸 Instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h3>Account</h3>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Online Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

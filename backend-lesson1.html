@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Lesson 1 - Online Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Online Academy Logo">
+            <h1>Online Academy</h1>
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="login.html" class="login-button auth-nav-btn">Login</a>
+</header>
+
+<main>
+
+<section class="lesson-page">
+
+    <h2>Lesson 1: Introduction to Backend</h2>
+
+    <p>
+        Backend is the part of a website that works behind the scenes.
+    </p>
+
+    <h3>Frontend</h3>
+
+    <p>
+        Frontend is the part that the user sees and interacts with.
+    </p>
+
+    <h3>Backend</h3>
+
+    <p>
+        Backend handles data, business logic, authentication and communication
+        with databases.
+    </p>
+
+    <h3>Example</h3>
+
+    <pre>User
+  |
+  v
+Frontend
+  |
+  v
+Backend
+  |
+  v
+Database</pre>
+
+    <h3>Popular Backend Technologies</h3>
+
+    <pre>Python
+Java
+Node.js
+PHP
+C#</pre>
+
+    <div class="lesson-buttons">
+        <button id="completeLessonBtn" class="complete-btn" onclick="toggleLessonComplete()">Mark as Completed ✅</button>
+        <a href="backend.html" class="lesson-nav-btn">Back to Course</a>
+
+        <a href="backend-lesson2.html" class="lesson-nav-btn">Next Lesson</a>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>Online Academy</h3>
+            <p>Learn programming and technology step by step with practical courses and real-world skills.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1DramDssTn/" target="_blank" rel="noopener noreferrer">
+                    <span>📘 Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/__online_academy?stkn=aDQ0NjR1aW5sOWQ=" target="_blank" rel="noopener noreferrer">
+                    <span>📸 Instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h3>Account</h3>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Online Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

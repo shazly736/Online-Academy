@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Lesson 4 - Online Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Online Academy Logo">
+            <h1>Online Academy</h1>
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="login.html" class="login-button auth-nav-btn">Login</a>
+</header>
+
+<main>
+
+<section class="lesson-page">
+
+    <h2>Lesson 4: DOM and Events</h2>
+
+    <p>
+        The DOM allows JavaScript to access and change HTML elements.
+    </p>
+
+    <h3>Selecting an Element</h3>
+
+    <pre>let title = document.getElementById("title");
+
+title.textContent = "Hello Online Academy";</pre>
+
+    <h3>Button Event</h3>
+
+    <pre>&lt;button onclick="hello()"&gt;
+    Click Me
+&lt;/button&gt;
+
+&lt;script&gt;
+
+function hello() {
+    alert("Hello World");
+}
+
+&lt;/script&gt;</pre>
+
+    <h3>Changing CSS with JavaScript</h3>
+
+    <pre>let title = document.getElementById("title");
+
+title.style.color = "blue";</pre>
+
+    <div class="lesson-buttons">
+        <button id="completeLessonBtn" class="complete-btn" onclick="toggleLessonComplete()">Mark as Completed ✅</button>
+        <a href="web-lesson3.html" class="lesson-nav-btn">Previous Lesson</a>
+
+        <a href="web-lesson5.html" class="lesson-nav-btn">Next Lesson</a>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>Online Academy</h3>
+            <p>Learn programming and technology step by step with practical courses and real-world skills.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1DramDssTn/" target="_blank" rel="noopener noreferrer">
+                    <span>📘 Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/__online_academy?stkn=aDQ0NjR1aW5sOWQ=" target="_blank" rel="noopener noreferrer">
+                    <span>📸 Instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h3>Account</h3>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Online Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

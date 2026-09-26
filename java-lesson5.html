@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Lesson 5 - Online Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Online Academy Logo">
+            <h1>Online Academy</h1>
+        </a>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="login.html" class="login-button auth-nav-btn">Login</a>
+</header>
+
+<main>
+
+<section class="lesson-page">
+
+    <h2>Lesson 5: Methods</h2>
+
+    <p>
+        Methods are used to organize code into reusable blocks.
+    </p>
+
+    <h3>Creating a Method</h3>
+
+    <pre>public static void hello() {
+    System.out.println("Hello World");
+}
+
+public static void main(String[] args) {
+    hello();
+}</pre>
+
+    <h3>Method with Parameters</h3>
+
+    <pre>public static void add(int x, int y) {
+    System.out.println(x + y);
+}
+
+public static void main(String[] args) {
+    add(5, 3);
+}</pre>
+
+    <h3>Output</h3>
+
+    <pre>8</pre>
+
+    <div class="lesson-buttons">
+        <button id="completeLessonBtn" class="complete-btn" onclick="toggleLessonComplete()">Mark as Completed ✅</button>
+        <a href="java-lesson4.html" class="lesson-nav-btn">Previous Lesson</a>
+
+        <a href="java.html" class="lesson-nav-btn">Back to Course</a>
+    </div>
+
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-col">
+            <h3>Online Academy</h3>
+            <p>Learn programming and technology step by step with practical courses and real-world skills.</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/share/1DramDssTn/" target="_blank" rel="noopener noreferrer">
+                    <span>📘 Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/__online_academy?stkn=aDQ0NjR1aW5sOWQ=" target="_blank" rel="noopener noreferrer">
+                    <span>📸 Instagram</span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+            <h3>Account</h3>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="profile.html">Profile</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Online Academy. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
