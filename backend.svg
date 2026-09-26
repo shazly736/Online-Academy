@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091b24"/>
+      <stop offset="50%" stop-color="#112936"/>
+      <stop offset="100%" stop-color="#163e4f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Tech Grid Background Pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,50 H 800 M 0,100 H 800 M 0,150 H 800 M 0,200 H 800 M 0,250 H 800 M 0,300 H 800 M 0,350 H 800 M 0,400 H 800" />
+    <path d="M 100,0 V 450 M 200,0 V 450 M 300,0 V 450 M 400,0 V 450 M 500,0 V 450 M 600,0 V 450 M 700,0 V 450" />
+  </g>
+
+  <!-- Glow Effect -->
+  <circle cx="400" cy="180" r="160" fill="#16d8cf" opacity="0.18" filter="blur(40px)"/>
+  <circle cx="400" cy="180" r="120" fill="#6366f1" opacity="0.2" filter="blur(35px)"/>
+
+  <!-- Server Stack & Cloud/API Nodes -->
+  <g transform="translate(400, 180)" filter="url(#shadow)">
+    <!-- Top Rack Unit -->
+    <rect x="-85" y="-70" width="170" height="34" rx="6" fill="#143644" stroke="#16d8cf" stroke-width="2"/>
+    <circle cx="-65" cy="-53" r="4.5" fill="#22c55e"/>
+    <circle cx="-50" cy="-53" r="4.5" fill="#16d8cf"/>
+    <line x1="-30" y1="-53" x2="65" y2="-53" stroke="#255569" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Middle Rack Unit -->
+    <rect x="-85" y="-22" width="170" height="34" rx="6" fill="#143644" stroke="#16d8cf" stroke-width="2"/>
+    <circle cx="-65" cy="-5" r="4.5" fill="#22c55e"/>
+    <circle cx="-50" cy="-5" r="4.5" fill="#16d8cf"/>
+    <line x1="-30" y1="-5" x2="65" y2="-5" stroke="#255569" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Bottom Rack Unit -->
+    <rect x="-85" y="26" width="170" height="34" rx="6" fill="#143644" stroke="#16d8cf" stroke-width="2"/>
+    <circle cx="-65" cy="43" r="4.5" fill="#22c55e"/>
+    <circle cx="-50" cy="43" r="4.5" fill="#38bdf8"/>
+    <line x1="-30" y1="43" x2="65" y2="43" stroke="#255569" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Data Connection Nodes -->
+    <circle cx="-115" cy="-3" r="7" fill="#16d8cf"/>
+    <line x1="-108" y1="-3" x2="-85" y2="-3" stroke="#16d8cf" stroke-width="2" stroke-dasharray="3,3"/>
+
+    <circle cx="115" cy="-3" r="7" fill="#6366f1"/>
+    <line x1="108" y1="-3" x2="85" y2="-3" stroke="#6366f1" stroke-width="2" stroke-dasharray="3,3"/>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="360" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" fill="#ffffff" letter-spacing="1">BACKEND DEVELOPMENT</text>
+  <text x="400" y="395" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#16d8cf" letter-spacing="4">SERVERS • APIS • ARCHITECTURE</text>
+</svg>

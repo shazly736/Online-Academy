@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071b26"/>
+      <stop offset="50%" stop-color="#0f2b3c"/>
+      <stop offset="100%" stop-color="#1b4965"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Tech Grid Background Pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,50 H 800 M 0,100 H 800 M 0,150 H 800 M 0,200 H 800 M 0,250 H 800 M 0,300 H 800 M 0,350 H 800 M 0,400 H 800" />
+    <path d="M 100,0 V 450 M 200,0 V 450 M 300,0 V 450 M 400,0 V 450 M 500,0 V 450 M 600,0 V 450 M 700,0 V 450" />
+  </g>
+
+  <!-- Glow Effect -->
+  <circle cx="400" cy="180" r="150" fill="#16d8cf" opacity="0.2" filter="blur(40px)"/>
+
+  <!-- Browser Window & Code Tags -->
+  <g transform="translate(400, 180)" filter="url(#shadow)">
+    <!-- Browser Mockup Card -->
+    <rect x="-110" y="-80" width="220" height="145" rx="12" fill="#0d212d" stroke="#16d8cf" stroke-width="2.5"/>
+    <!-- Browser Top Bar -->
+    <rect x="-110" y="-80" width="220" height="28" rx="12" fill="#16384a"/>
+    <circle cx="-90" cy="-66" r="4.5" fill="#ff5f56"/>
+    <circle cx="-75" cy="-66" r="4.5" fill="#ffbd2e"/>
+    <circle cx="-60" cy="-66" r="4.5" fill="#27c93f"/>
+
+    <!-- Code Brackets & Slash -->
+    <text x="0" y="2" text-anchor="middle" font-family="'Consolas', 'Courier New', monospace" font-weight="900" font-size="52" fill="#16d8cf">&lt; / &gt;</text>
+
+    <!-- Mini badges for HTML / CSS / JS -->
+    <g transform="translate(-65, 36)">
+      <rect x="-15" y="-10" width="30" height="18" rx="4" fill="#e34f26"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#fff">HTML</text>
+    </g>
+    <g transform="translate(0, 36)">
+      <rect x="-15" y="-10" width="30" height="18" rx="4" fill="#1572b6"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#fff">CSS</text>
+    </g>
+    <g transform="translate(65, 36)">
+      <rect x="-15" y="-10" width="30" height="18" rx="4" fill="#f7df1e"/>
+      <text x="0" y="3" text-anchor="middle" font-family="Arial" font-size="9" font-weight="bold" fill="#000">JS</text>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="360" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" fill="#ffffff" letter-spacing="1">WEB DEVELOPMENT</text>
+  <text x="400" y="395" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#16d8cf" letter-spacing="4">HTML • CSS • JAVASCRIPT</text>
+</svg>

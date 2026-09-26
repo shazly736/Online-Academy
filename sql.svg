@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a1d20"/>
+      <stop offset="50%" stop-color="#0b3036"/>
+      <stop offset="100%" stop-color="#144d56"/>
+    </linearGradient>
+    <linearGradient id="cylinderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00758f"/>
+      <stop offset="50%" stop-color="#16d8cf"/>
+      <stop offset="100%" stop-color="#005d73"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="450" fill="url(#bgGrad)"/>
+
+  <!-- Tech Grid Background Pattern -->
+  <g opacity="0.07" stroke="#ffffff" stroke-width="1">
+    <path d="M 0,50 H 800 M 0,100 H 800 M 0,150 H 800 M 0,200 H 800 M 0,250 H 800 M 0,300 H 800 M 0,350 H 800 M 0,400 H 800" />
+    <path d="M 100,0 V 450 M 200,0 V 450 M 300,0 V 450 M 400,0 V 450 M 500,0 V 450 M 600,0 V 450 M 700,0 V 450" />
+  </g>
+
+  <!-- Glow Effect -->
+  <circle cx="400" cy="180" r="150" fill="#16d8cf" opacity="0.2" filter="blur(40px)"/>
+
+  <!-- Database Stack Icon -->
+  <g transform="translate(400, 175)" filter="url(#shadow)">
+    <!-- Bottom Disk -->
+    <g transform="translate(0, 45)">
+      <path d="M -70 0 C -70 20 70 20 70 0 L 70 30 C 70 50 -70 50 -70 30 Z" fill="#0c4a54"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" fill="#16d8cf" opacity="0.4"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" stroke="#16d8cf" stroke-width="2" fill="none"/>
+      <path d="M -70 0 L -70 30 C -70 50 70 50 70 30 L 70 0" stroke="#16d8cf" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Middle Disk -->
+    <g transform="translate(0, 0)">
+      <path d="M -70 0 C -70 20 70 20 70 0 L 70 30 C 70 50 -70 50 -70 30 Z" fill="#0f5c69"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" fill="#16d8cf" opacity="0.5"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" stroke="#16d8cf" stroke-width="2" fill="none"/>
+      <path d="M -70 0 L -70 30 C -70 50 70 50 70 30 L 70 0" stroke="#16d8cf" stroke-width="2" fill="none"/>
+    </g>
+
+    <!-- Top Disk -->
+    <g transform="translate(0, -45)">
+      <path d="M -70 0 C -70 20 70 20 70 0 L 70 30 C 70 50 -70 50 -70 30 Z" fill="#146f7f"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" fill="#16d8cf" opacity="0.7"/>
+      <ellipse cx="0" cy="0" rx="70" ry="20" stroke="#ffffff" stroke-width="2.5" fill="none"/>
+      <path d="M -70 0 L -70 30 C -70 50 70 50 70 30 L 70 0" stroke="#16d8cf" stroke-width="2" fill="none"/>
+    </g>
+  </g>
+
+  <!-- Typography -->
+  <text x="400" y="360" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="800" font-size="34" fill="#ffffff" letter-spacing="1">SQL &amp; DATABASES</text>
+  <text x="400" y="395" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="600" font-size="16" fill="#16d8cf" letter-spacing="4">QUERIES • TABLES • RELATIONS</text>
+</svg>
