@@ -1,3 +1,45 @@
+// ================= AUTOMATIC IMAGE RESOLVER (GitHub Pages & Local) =================
+(function () {
+    function resolveImg(img) {
+        if (!img || img.dataset.resolvedFallback) return;
+        var currentSrc = img.getAttribute("src") || "";
+        img.dataset.resolvedFallback = "true";
+
+        if (currentSrc.startsWith("images/")) {
+            img.src = currentSrc.replace(/^images\//, "");
+        } else if (img.src && img.src.includes("/images/")) {
+            img.src = img.src.replace("/images/", "/");
+        } else if (!currentSrc.includes("/")) {
+            img.src = "images/" + currentSrc;
+        }
+    }
+
+    // Capture errors on images and redirect to correct location
+    window.addEventListener("error", function (e) {
+        if (e.target && e.target.tagName === "IMG") {
+            resolveImg(e.target);
+        }
+    }, true);
+
+    // Scan any images that failed before script executed
+    function scanAndFixImages() {
+        var imgs = document.getElementsByTagName("img");
+        for (var i = 0; i < imgs.length; i++) {
+            var img = imgs[i];
+            if (img.complete && img.naturalWidth === 0) {
+                resolveImg(img);
+            }
+        }
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", scanAndFixImages);
+    } else {
+        scanAndFixImages();
+    }
+    window.addEventListener("load", scanAndFixImages);
+})();
+
 // ================= INITIALIZATION & STATE =================
 let language = localStorage.getItem("language") || "en";
 
